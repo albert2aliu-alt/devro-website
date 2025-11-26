@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="page_title">DEVRO - Zgjidhje e Fuqishme Për Biznes Modern</title> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="DEVRO.png" alt="DEVRO Logo" class="site-logo"> </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-key="nav_about">Rreth Nesh</a></li>
+                <li><a href="index.html#features" data-key="nav_features">Veçoritë</a></li>
+                <li><a href="index.html#pricing" data-key="nav_pricing">Çmimet</a></li>
+                <li><a href="EMAIL.html" data-key="nav_contact">Kontaktoni</a></li>
+            </ul>
+            
+            <div class="header-controls">
+                <div class="language-switcher">
+                    <select id="language-select">
+                        <option value="sq">Shqip</option>
+                        <option value="en">English</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </div>
+                <button class="cta-button" id="signupCtaBtn" data-key="cta_signup">Regjistrohu</button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Faqja e Regjistrimit</h1>
+                <p>Kjo është një faqe shembull për regjistrim ose formë specifike.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalTitle" data-key="modal_title" >Regjistrohu për Të Filluar</h3>
+            <p id="modalSubtitle" data-key="modal_subtitle">Plotësoni detajet më poshtë dhe ne do t'ju kontaktojmë brenda 24 orëve.</p>
+            
+            <form class="modal-form">
+                <label for="modal-name" data-key="modal_name_label">Emri i Plotë</label>
+                <input type="text" id="modal-name" required>
+                
+                <label for="modal-email" data-key="modal_email_label">E-mail Adresa</label>
+                <input type="email" id="modal-email" required>
+                
+                <label for="modal-details" data-key="modal_details_label">Si mund t'ju ndihmojmë?</label>
+                <textarea id="modal-details" rows="4"></textarea> 
+                
+                <button type="submit" class="primary-btn" data-key="modal_submit_btn">Dërgo Kërkesën</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">DEVRO</div>
+            <p id="footerCopyright" data-key="footer_copyright">DEVRO © 2024. Të gjitha të drejtat të rezervuara.</p>
+            <div class="contact-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
