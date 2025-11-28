@@ -196,6 +196,41 @@ h1, h2, h3 {
 }
 /* --- FUND STILI I 'MESO ME SHUME' --- */
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
 
 /* Feature Block Styling */
 .features-grid {
@@ -312,6 +347,12 @@ h1, h2, h3 {
     border-radius: 10px;
     margin: 40px auto;
     text-align: center;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .gradient-bg-1 {
