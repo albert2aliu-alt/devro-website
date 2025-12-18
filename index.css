@@ -1,6 +1,4 @@
-/* style.css */
-
-/* Custom Properties for easy color changes */
+/* --- VARIABLES --- */
 :root {
     --primary-color: #6a0dad; 
     --secondary-color: #4b0082; 
@@ -13,17 +11,14 @@
     --padding-section: 60px 5%;
 }
 
-/* Global Styles */
+/* --- GLOBAL STYLES --- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Rregulli Kryesor për Scroll të Butë */
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,10 +27,7 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: var(--text-light);
-    margin-bottom: 0.5em;
-}
+h1, h2, h3 { color: var(--text-light); margin-bottom: 0.5em; }
 
 .primary-btn, .cta-button, .card-btn, .plan-cta, .secondary-btn {
     display: inline-block;
@@ -48,21 +40,15 @@ h1, h2, h3 {
     transition: background 0.3s, border-color 0.3s;
 }
 
-.primary-btn, .cta-button, .card-btn, .plan-cta {
-    background: var(--primary-color);
-    color: white;
-    border: none;
-}
+.primary-btn, .cta-button, .card-btn, .plan-cta { background: var(--primary-color); color: white; border: none; }
 
-.primary-btn:hover, .cta-button:hover, .card-btn:hover, .plan-cta:hover {
-    background: var(--secondary-color);
-}
+.primary-btn:hover, .cta-button:hover, .card-btn:hover, .plan-cta:hover { background: var(--secondary-color); }
 
-/* Header/Navigation */
+/* --- HEADER --- */
 .main-header {
     background-color: var(--card-bg);
     padding: 15px 5%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,14 +65,7 @@ h1, h2, h3 {
     max-width: 1200px;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: 900;
-    color: var(--primary-color);
-    display: flex; 
-    align-items: center;
-    gap: 10px;
-}
+.logo { font-size: 1.5em; font-weight: 900; color: var(--primary-color); display: flex; align-items: center; gap: 10px; }
 
 .nav-links {
     list-style: none;
@@ -95,29 +74,14 @@ h1, h2, h3 {
     justify-content: center;
 }
 
-.nav-links li a {
-    color: var(--text-light);
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 5px 0;
-    transition: color 0.3s;
-}
+.nav-links li a { color: var(--text-light); text-decoration: none; margin: 0 15px; padding: 5px 0; transition: color 0.3s; }
 
-.nav-links li a:hover {
-    color: var(--primary-color);
-}
+.nav-links li a:hover { color: var(--primary-color); }
 
-.header-controls {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+.header-controls { display: flex; align-items: center; gap: 20px; }
 
-/* Zgjedhësi i Gjuhës */
-.language-switcher {
-    position: relative;
-    display: inline-block;
-}
+/* --- LANGUAGE SWITCHER --- */
+.language-switcher { position: relative; display: inline-block; }
 
 .language-switcher select {
     background-color: var(--card-bg);
@@ -143,357 +107,139 @@ h1, h2, h3 {
     pointer-events: none;
 }
 
-/* Seksionet dhe Lëvizja (Scroll) */
-.hero-section, .details-section, .pricing-section {
-    padding: var(--padding-section);
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* --- SECTIONS --- */
+.hero-section, .details-section, .pricing-section { padding: var(--padding-section); max-width: 1200px; margin: 0 auto; }
 
-/* Rregullon hapësirën (offset) në krye kur lëvizim për shkak të header-it sticky */
-.section-anchor {
-    scroll-margin-top: 80px; 
-}
+.section-anchor { scroll-margin-top: 80px; }
 
-.hero-section {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+.hero-section { text-align: center; padding-top: 100px; padding-bottom: 100px; }
 
-.secondary-btn {
-    background: transparent;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    margin-left: 15px; /* Shton hapësirë nga butoni primary */
-}
+.secondary-btn { background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); margin-left: 15px; }
+.secondary-btn:hover { background: rgba(106, 13, 173, 0.2); }
 
-.secondary-btn:hover {
-    background: rgba(106, 13, 173, 0.2); /* Efekt i lehtë mbrapa */
-}
+.text-center { text-align: center; }
 
-.text-center {
-    text-align: center;
-}
+/* --- HIDDEN TEXT --- */
+.hidden-text { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.7s ease-in-out, opacity 0.5s ease; margin-bottom: 0 !important; }
+.hidden-text.visible { max-height: 500px; opacity: 1; margin-bottom: 40px !important; }
 
-/* --- STILI PER TEKSTIN E FSHEHUR (Meso Me Shume) --- */
-.hidden-text {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.7s ease-in-out, opacity 0.5s ease;
-    margin-bottom: 0 !important;
-}
+.hero-cta a { text-decoration: none; }
 
-.hidden-text.visible {
-    max-height: 500px; 
-    opacity: 1;
-    margin-bottom: 40px !important;
-}
+/* --- FEATURES --- */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; margin-bottom: 40px; }
 
-.hero-cta a {
-    text-decoration: none; 
-}
-/* --- FUND STILI I 'MESO ME SHUME' --- */
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .pricing-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* Phone */
-@media (max-width: 768px) {
-  .pricing-cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .hero-section {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-}
-
-
-/* Feature Block Styling */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.feature-block {
-    background-color: var(--card-bg);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+.feature-block { background-color: var(--card-bg); padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
 
 .icon-placeholder {
-    width: 50px;
-    height: 50px;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    color: var(--text-light);
-    margin-bottom: 15px;
+    width: 50px; height: 50px; background-color: var(--secondary-color);
+    border-radius: 8px; display: flex; justify-content: center; align-items: center;
+    font-size: 1.5em; color: var(--text-light); margin-bottom: 15px;
 }
 
-.check-list {
-    list-style: none;
-    padding-left: 0;
-}
+.check-list { list-style: none; padding-left: 0; }
+.check-list li { margin: 8px 0; display: flex; align-items: center; }
+.check-list i { color: var(--primary-color); margin-right: 10px; }
 
-.check-list li {
-    margin: 8px 0;
-    display: flex;
-    align-items: center;
-}
+/* --- PRICING --- */
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
 
-.check-list i {
-    color: var(--primary-color);
-    margin-right: 10px;
-}
+.plan-card { background-color: var(--card-bg); padding: 30px; border-radius: 10px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+.plan-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+.plan-card h3 { margin-bottom: 10px; }
+.price-tag { font-size: 2.5em; font-weight: bold; color: var(--primary-color); margin-bottom: 15px; }
+.price-tag small { font-size: 0.5em; font-weight: normal; color: var(--text-light); }
+.plan-card ul { list-style: none; padding: 0; margin-bottom: 25px; text-align: left; }
+.plan-card ul li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 10px; }
 
-/* Pricing Section Grid */
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
+.plan-card.popular { background-color: var(--highlight-bg); border: 2px solid var(--primary-color); box-shadow: 0 0 20px rgba(106,13,173,0.5); }
+.popular .plan-cta { background: var(--gradient-1); }
 
-.plan-card {
-    background-color: var(--card-bg);
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+/* --- CALLOUT --- */
+.callout-card { padding: 40px; border-radius: 10px; margin: 40px auto; text-align: center; }
+.gradient-bg-1 { background: var(--gradient-1); box-shadow: 0 5px 15px rgba(106,13,173,0.4); }
+.gradient-bg-2 { background: var(--gradient-2); box-shadow: 0 5px 15px rgba(75,0,130,0.4); }
 
-.plan-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
+/* --- CONTACT ICONS --- */
+.contact-icons { margin: 25px 0; display: flex; justify-content: center; gap: 25px; }
+.contact-icons a { color: var(--text-light); font-size: 1.8em; transition: color 0.3s; }
+.contact-icons a:hover { color: var(--primary-color); }
 
-.plan-card h3 {
-    margin-bottom: 10px;
-}
+.main-footer { background-color: var(--card-bg); padding: 30px 5%; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
 
-.price-tag {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 15px;
+/* --- MODAL --- */
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.7); padding-top: 50px; }
+.modal-content { background-color: var(--card-bg); margin: 5% auto; padding: 30px; border: 1px solid var(--primary-color); width: 80%; max-width: 500px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); position: relative; color: var(--text-light); }
+.close-btn { color: #aaa; float: right; font-size: 28px; font-weight: bold; transition: color 0.3s; }
+.close-btn:hover, .close-btn:focus { color: var(--primary-color); text-decoration: none; cursor: pointer; }
+.modal-form label { display: block; margin-top: 15px; margin-bottom: 5px; font-weight: bold; }
+.modal-form input[type="text"], .modal-form input[type="email"], .modal-form textarea {
+    width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid var(--highlight-bg); border-radius: 4px; background-color: var(--background-dark); color: var(--text-light);
 }
+.modal-form button { width: 100%; margin-top: 20px; }
 
-.price-tag small {
-    font-size: 0.5em;
-    font-weight: normal;
-    color: var(--text-light);
-}
-
-.plan-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 25px;
-    text-align: left;
-}
-
-.plan-card ul li {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Dizenjimi i Planit Popullor */
-.plan-card.popular {
-    background-color: var(--highlight-bg);
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 20px rgba(106, 13, 173, 0.5);
-}
-
-.popular .plan-cta {
-    background: var(--gradient-1);
-}
-
-/* Callout Cards & Footer */
-.callout-card {
-    padding: 40px;
-    border-radius: 10px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.pricing-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.gradient-bg-1 {
-    background: var(--gradient-1);
-    box-shadow: 0 5px 15px rgba(106, 13, 173, 0.4);
-}
-
-.gradient-bg-2 {
-    background: var(--gradient-2);
-    box-shadow: 0 5px 15px rgba(75, 0, 130, 0.4);
-}
-
-/* Ikonat e Kontaktit */
-.contact-icons {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.contact-icons a {
-    color: var(--text-light);
-    font-size: 1.8em;
-    transition: color 0.3s;
-}
-
-.contact-icons a:hover {
-    color: var(--primary-color);
-}
-
-
-.main-footer {
-    background-color: var(--card-bg);
-    padding: 30px 5%;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* === Modal (Pop-up) Styling === */
-.modal {
-    display: none; /* Fshehur si parazgjedhje */
-    position: fixed;
-    z-index: 2000; /* Duhet të jetë mbi header-in sticky */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Mbulon pjesën e pasme */
-    padding-top: 50px;
-}
-
-.modal-content {
-    background-color: var(--card-bg);
-    margin: 5% auto; /* Pozicionimi në qendër */
-    padding: 30px;
-    border: 1px solid var(--primary-color);
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    position: relative;
-    color: var(--text-light);
-}
-
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-form label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.modal-form input[type="text"],
-.modal-form input[type="email"],
-.modal-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--highlight-bg);
-    border-radius: 4px;
-    background-color: var(--background-dark);
-    color: var(--text-light);
-}
-
-.modal-form button {
-    width: 100%;
-    margin-top: 20px;
-}
-
-/* Mobile Responsiveness */
-.menu-toggle {
-    display: none; 
-    font-size: 1.5em;
-    cursor: pointer;
-}
+/* --- MOBILE RESPONSIVENESS --- */
+.menu-toggle { display: none; font-size: 1.5em; cursor: pointer; }
 
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .cta-button { display: none; }
     .menu-toggle { display: block; }
-    
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: var(--card-bg);
-        padding: 20px 0;
-        z-index: 10;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-    .nav-links.active li {
-        text-align: center;
-        margin: 10px 0;
-    }
-    .header-controls {
-        flex-grow: 1; 
-        justify-content: flex-end;
-        gap: 10px;
-    }
-    
-    .modal-content {
-        width: 95%;
-        margin: 20% auto; 
-    }
+    .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background-color: var(--card-bg); padding: 20px 0; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+    .nav-links.active li { text-align: center; margin: 10px 0; }
+    .header-controls { flex-grow: 1; justify-content: flex-end; gap: 10px; }
+    .modal-content { width: 95%; margin: 20% auto; }
+}
+
+/* --- PORTFOLIO SECTION --- */
+/* Portfolio Section */
+.portfolio-section {
+    padding: var(--padding-section);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 300px; /* Responsive sizing */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-card h3 {
+    margin-bottom: 15px;
+}
+
+.portfolio-card p {
+    margin-bottom: 20px;
+}
+
+/* Gradient button for portfolio cards */
+.portfolio-card .card-btn {
+    background: var(--gradient-1);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+     cursor: pointer;
+    transition: background 0.5s, transform 0.3s;
+}
+
+.portfolio-card .card-btn:hover {
+    background: var(--gradient-2);
+    transform: scale(1.05);
 }
