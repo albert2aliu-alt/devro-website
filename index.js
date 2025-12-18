@@ -70,7 +70,10 @@ const translations = {
         modal_details_label: 'Si mund t\'ju ndihmojmë?',
         modal_submit_btn: 'Dërgo Kërkesën',
         footer_copyright: 'Të gjitha të drejtat e rezervuara.',
-        page_title: 'DEVRO - Zgjidhje e Fuqishme Për Biznes Modern'
+        page_title: 'DEVRO - Zgjidhje e Fuqishme Për Biznes Modern',
+    appName: "Smart Health Tracker",
+    appDesc: "Smart Health Tracker është një aplikacion inovativ që ndihmon përdoruesit të monitorojnë shëndetin e tyre, të regjistrojnë aktivitetet fizike, ushqimin dhe parametrat jetësorë në mënyrë të thjeshtë dhe inteligjente.",
+    seeMore: "Shiko Më Shumë"
     },
     en: { // English
         nav_about: 'About Us',
@@ -140,7 +143,12 @@ const translations = {
         modal_details_label: 'How can we help you?',
         modal_submit_btn: 'Submit Request',
         footer_copyright: 'All Rights Reserved.',
-        page_title: 'DEVRO - Powerful Solution for Modern Business'
+        page_title: 'DEVRO - Powerful Solution for Modern Business',
+        portfolio_section_title: "Project Portfolio",
+    appName: "Smart Health Tracker",
+    appDesc: "Smart Health Tracker is an innovative app that helps users monitor their health, track physical activities, nutrition, and vital signs in a simple and smart way.",
+    seeMore: "See More",
+    
     },
     de: { // German
         nav_about: 'Über Uns',
@@ -209,7 +217,12 @@ const translations = {
         modal_details_label: 'Wie können wir Ihnen helfen?',
         modal_submit_btn: 'Anfrage senden',
         footer_copyright: 'Alle Rechte vorbehalten.',
-        page_title: 'DEVRO - Leistungsstarke Lösung für modernes Geschäft'
+        page_title: 'DEVRO - Leistungsstarke Lösung für modernes Geschäft',
+        portfolio_section_title: "Projektportfolio",
+        appName: "Smart Health Tracker",
+        appDesc: "Smart Health Tracker ist eine innovative App, die den Nutzern hilft, ihre Gesundheit zu überwachen, körperliche Aktivitäten, Ernährung und Vitalwerte auf einfache und intelligente Weise zu verfolgen.",
+        seeMore: "Mehr anzeigen"
+
     }
 };
 
