@@ -2,208 +2,210 @@
 <html lang="sq">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DEVRO ofron zgjidhje të fuqishme dhe portofolio të kompletuar të uebsajteve, duke krijuar aplikacione dhe sisteme për biznesin modern.">
     <title>DEVRO</title>
     <link rel="stylesheet" href="DEVRO.css">
-    
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+   
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+
+<header class="main-header">
+    <nav class="navbar">
+        <div class="logo">
+            <span class="site-name">DEVRO</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" data-key="nav_about">Rreth Nesh</a></li>
+            <li><a href="#features" data-key="nav_features">Veçoritë</a></li>
+            <li><a href="#pricing" data-key="nav_pricing">Çmimet</a></li>
+            <li><a href="#contact" data-key="nav_contact">Kontaktoni</a></li>
+        </ul>
+        <div class="header-controls">
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="sq">Shqip</option>
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </div>
+            <button class="cta-button" id="signupCtaBtn" data-key="cta_signup">Regjistrohu</button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 data-key="hero_headline">Zgjidhje e fuqishme për biznes modern</h1>
+            <p data-key="hero_subtitle">Një përshkrim i shkurtër por bindës i produktit ose shërbimit kryesor.</p>
+            <div class="hero-cta">
+                <a href="#pricing" class="primary-btn" data-key="btn_get_started">Fillo Tani</a>
+                <a href="#" class="secondary-btn" id="learnMoreBtn" data-key="btn_learn_more">Mëso Më Shumë</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details-section section-anchor text-center" id="about">
+        <h2 class="section-title" data-key="details_why_us">Pse të na Zgjidhni Ne?</h2>
+        <div id="expandedContentContainer" class="hidden-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p class="about-intro" data-key="about_expanded_text" style="color: #aaa; margin-top: 0; padding-top: 0;">
+                DEVRO është partneri juaj i besuar për shndërrimin e ideve dixhitale në realitete të prekshme. Ne specializohemi në krijimin e uebsajteve dhe aplikacioneve të personalizuara që nuk janë vetëm vizualisht tërheqëse, por që performojnë në mënyrë të jashtëzakonshme. Qëllimi ynë është të sigurojmë zgjidhje që rrisin dukshmërinë tuaj në internet, optimizojnë proceset e biznesit dhe u ofrojnë klientëve tuaj një përvojë të paharrueshme dixhitale.
+            </p>
+        </div>
+
+        <div class="features-grid section-anchor" id="features">
+            <!-- Feature 1 -->
+            <div class="feature-block">
+                <div class="icon-placeholder"><i class="fas fa-code"></i></div>
+                <h3 data-key="feature1_title">Teknologji Moderne</h3>
+                <p data-key="feature1_description">Ne punojmë me standardet më të fundit të zhvillimit të uebit.</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> <span data-key="tech_html">HTML5/CSS3</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="tech_js">JavaScript ES6+</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="tech_responsive">Dizenjim Reagjues (Responsive)</span></li>
+                </ul>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-block">
+                <div class="icon-placeholder"><i class="fas fa-tachometer-alt"></i></div>
+                <h3 data-key="feature2_title">Performancë & Shpejtësi</h3>
+                <p data-key="feature2_description">Faqja juaj do të jetë e shpejtë dhe e optimizuar për Google.</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> <span data-key="perf_seo">Optimizim i Bazuar në SEO</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="perf_speed">Ngarkim i Shpejtë i Faqes</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="perf_support">Mbështetje Teknike</span></li>
+                </ul>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-block">
+                <div class="icon-placeholder"><i class="fas fa-magic"></i></div>
+                <h3 data-key="feature3_title">Dizenjim Profesional</h3>
+                <p data-key="feature3_description">Përvoja e shkëlqyer e përdoruesit (UX) dhe ndërfaqja (UI).</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> <span data-key="design_custom">Dizenjim i Personalizuar</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="design_uiux">Fokus në UI/UX</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="design_branding">Përshtatje me Brendin</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Original Callout -->
+        <div class="callout-card gradient-bg-1">
+            <h3 data-key="callout1_title">Krijoni Praninë Tuaj Online</h3>
+            <p data-key="callout1_description">Mos prisni, filloni projektin tuaj sot me ekspertët e DEVRO!</p>
+            <a href="#contact" class="card-btn" data-key="callout1_btn">Kërkoni Ofertë Falas</a>
+        </div>
+    </section>
+
+    <!-- New Portfolio Cards Section -->
+    <section class="portfolio-section section-anchor" id="portfolio">
+    <h2 class="section-title text-center" data-key="portfolio_section_title">Portofoli i Projekteve</h2>
     
-
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">
-                <span class="site-name">DEVRO</span>
-            </div>
-            
-            <ul class="nav-links">
-                <li><a href="#about" data-key="nav_about">Rreth Nesh</a></li>
-                <li><a href="#features" data-key="nav_features">Veçoritë</a></li>
-                <li><a href="#pricing" data-key="nav_pricing">Çmimet</a></li>
-                <li><a href="#contact" data-key="nav_contact">Kontaktoni</a></li>
-            </ul>
-            
-            <div class="header-controls">
-                <div class="language-switcher">
-                    <select id="language-select">
-                        <option value="sq">Shqip</option>
-                        <option value="en">English</option>
-                        <option value="de">Deutsch</option>
-                    </select>
-                </div>
-                <button class="cta-button" id="signupCtaBtn" data-key="cta_signup">Regjistrohu</button>
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-
-    <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1 data-key="hero_headline">Zgjidhje e fuqishme për biznes modern</h1>
-                <p data-key="hero_subtitle">Një përshkrim i shkurtër por bindës i produktit ose shërbimit kryesor.</p>
-                <div class="hero-cta">
-                    
-                    
-                    <a href="#pricing" class="primary-btn" data-key="btn_get_started">
-                        Fillo Tani</a>
-                    
-                    <a href="#" class="secondary-btn" id="learnMoreBtn" data-key="btn_learn_more">Mëso Më Shumë</a> 
-                </div>
-            </div>
-        </section>
-
-        <section class="details-section section-anchor text-center" id="about">
-            
-            <h2 class="section-title" data-key="details_why_us">Pse të na Zgjidhni Ne?</h2>
-            
-            <div id="expandedContentContainer" class="hidden-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p class="about-intro" data-key="about_expanded_text" style="color: #aaa; margin-top: 0; padding-top: 0;">
-                    DEVRO është partneri juaj i besuar për shndërrimin e ideve dixhitale në realitete të prekshme. Ne specializohemi në krijimin e uebsajteve dhe aplikacioneve të personalizuara që nuk janë vetëm vizualisht tërheqëse, por që performojnë në mënyrë të jashtëzakonshme. Qëllimi ynë është të sigurojmë zgjidhje që rrisin dukshmërinë tuaj në internet, optimizojnë proceset e biznesit dhe u ofrojnë klientëve tuaj një përvojë të paharrueshme dixhitale.
-                </p>
-            </div>
-            <div class="features-grid section-anchor" id="features">
-                <div class="feature-block">
-                    <div class="icon-placeholder"><i class="fas fa-code"></i></div>
-                    <h3 data-key="feature1_title">Teknologji Moderne</h3>
-                    <p data-key="feature1_description">Ne punojmë me standardet më të fundit të zhvillimit të uebit.</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check-circle"></i> <span data-key="tech_html">HTML5/CSS3</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="tech_js">JavaScript ES6+</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="tech_responsive">Dizenjim Reagjues (Responsive)</span></li>
-                    </ul>
-                </div>
-                
-                <div class="feature-block">
-                    <div class="icon-placeholder"><i class="fas fa-tachometer-alt"></i></div>
-                    <h3 data-key="feature2_title">Performancë & Shpejtësi</h3>
-                    <p data-key="feature2_description">Faqja juaj do të jetë e shpejtë dhe e optimizuar për Google.</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check-circle"></i> <span data-key="perf_seo">Optimizim i Bazuar në SEO</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="perf_speed">Ngarkim i Shpejtë i Faqes</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="perf_support">Mbështetje Teknike</span></li>
-                    </ul>
-                </div>
-                
-                <div class="feature-block">
-                    <div class="icon-placeholder"><i class="fas fa-magic"></i></div>
-                    <h3 data-key="feature3_title">Dizenjim Profesional</h3>
-                    <p data-key="feature3_description">Përvoja e shkëlqyer e përdoruesit (UX) dhe ndërfaqja (UI).</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check-circle"></i> <span data-key="design_custom">Dizenjim i Personalizuar</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="design_uiux">Fokus në UI/UX</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="design_branding">Përshtatje me Brendin</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="callout-card gradient-bg-1">
-                <h3 data-key="callout1_title">Krijoni Praninë Tuaj Online</h3>
-                <p data-key="callout1_description">Mos prisni, filloni projektin tuaj sot me ekspertët e DEVRO!</p>
-                <a href="#contact" class="card-btn" data-key="callout1_btn">Kërkoni Ofertë Falas</a>
-            </div>
-        </section>
-
-        <section class="pricing-section section-anchor" id="pricing">
-            <h2 class="section-title text-center" data-key="pricing_headline">Planet Tona të Çmimeve</h2>
-            
-            <div class="pricing-grid">
-                
-                <div class="plan-card">
-                    <h3 data-key="plan_basic_title">Plani Starter (Nisës)</h3>
-                    <div class="price-tag">€500<small data-key="price_onetime"> / Njëherësh</small></div>
-                    <button class="plan-cta" data-plan="Starter" data-key="plan_basic_cta">Zgjidh Planin</button>
-                    <ul style="margin-top: 20px;">
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_basic_feature1">1 Faqe Aterrimi (Landing Page)</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_basic_feature2">Dizenjim Reagjues Bazik</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_basic_feature3">Domen dhe Hosting (1 Vit)</span></li>
-                        <li style="color: grey;"><i class="fas fa-times-circle" style="color: grey;"></i> <span data-key="plan_basic_feature4">Sistem Menaxhimi (CMS)</span></li>
-                    </ul>
-                </div>
-                
-                <div class="plan-card popular">
-                    <h3 data-key="plan_standard_title">Plani Biznesor (Popullor)</h3>
-                    <div class="price-tag">€1200<small data-key="price_onetime"> / Njëherësh</small></div>
-                     <button class="plan-cta" data-plan="Business" data-key="plan_standard_cta">Zgjidh Planin</button>
-                    <ul style="margin-top: 20px;">
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature1">Deri në 5 Faqe (Home, About, Services...)</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature2">Dizenjim Unik & UI/UX</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature3">Hosting i Optimizuar (1 Vit)</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature4">Sistem Menaxhimi i Përmbajtjes (CMS)</span></li>
-                    </ul>
-                </div>
-                
-                <div class="plan-card">
-                    <h3 data-key="plan_premium_title">Plani Custom (Premium)</h3>
-                    <div class="price-tag" data-key="price_contact">Kontakto<small data-key="price_foroffer"> / Për Ofertë</small></div>
-                    <button class="plan-cta" data-plan="Custom" data-key="plan_premium_cta">Kërkoni Ofertë</button>
-                    <ul style="margin-top: 20px;">
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature1">Zhvillim i plotë i aplikacionit (WebApp)</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature2">Funksionalitete të Personalizuara</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature3">Integrime me API/Pagesa</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature4">Mbështetje 24/7 dhe Trajnim</span></li>
-                    </ul>
-                </div>
-                
-            </div>
-            
-        </section>
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <h3 id="appName">Smart-Health-Tracker</h3>
+            <p id="appDesc">Smart Health Tracker është një aplikacion inovativ që ndihmon përdoruesit të monitorojnë shëndetin e tyre, të regjistrojnë aktivitetet fizike, ushqimin dhe parametrat jetësorë në mënyrë të thjeshtë dhe inteligjente.</p>
+            <a id="seeMore" href="https://albert2aliu-alt.github.io/Smart-Health-Tracker/" class="card-btn">Shiko Më Shumë</a>
+        </div>
         
-        <section class="callout-card gradient-bg-2 section-anchor" id="contact">
-            <h3 data-key="callout2_title">Gati të filloni projektin tuaj?</h3>
-            <p data-key="callout2_description">Na kontaktoni direkt sot për të diskutuar nevojat tuaja.</p>
-            
-            <div class="contact-icons">
-                <a href="https://github.com/albert2aliu-alt" target="_blank">
-                    <a href="https://github.com/erinlaci-ai" target="_blank">
-                    <i class="fab fa-github"></i></a>
-                </a>
-                
-                <a href="tel:+38343123456" aria-label="Call Us">
-                    <i class="fas fa-phone-alt"></i>
-                </a>
-                
-            </div>
-            
-            <button class="card-btn" id="emailCtaBtn" data-key="callout2_btn">Dërgo një E-mail</button>
-        </section>
-        
-    </main>
-    
-    <div id="registrationModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h3 id="modalTitle" data-key="modal_title" >Regjistrohu për Të Filluar</h3>
-            <p id="modalSubtitle" data-key="modal_subtitle">Plotësoni detajet më poshtë dhe ne do t'ju kontaktojmë brenda 24 orëve.</p>
-            
-            <form class="modal-form">
-                <label for="modal-name" data-key="modal_name_label">Emri i Plotë</label>
-                <input type="text" id="modal-name" required>
-                
-                <label for="modal-email" data-key="modal_email_label">E-mail Adresa</label>
-                <input type="email" id="modal-email" required>
-                
-                <label for="modal-details" data-key="modal_details_label">Si mund t'ju ndihmojmë?</label>
-                <textarea id="modal-details" rows="4"></textarea> 
-                
-                <button type="submit" class="primary-btn" data-key="modal_submit_btn">Dërgo Kërkesën</button>
-            </form>
+        <div class="portfolio-card" src="">
+            <h3>Projekti 2</h3>
+            <p>Përshkrim i shkurtër i projektit tuaj të dytë.</p>
+            <a href="#" class="card-btn">Shiko Më Shumë</a>
         </div>
     </div>
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-logo">DEVRO</div>
-            <p class="copyright">&copy; <span id="current-year"></span> DEVRO. <span data-key="footer_copyright">Të gjitha të drejtat e rezervuara.</span></p>
-        </div>
-    </footer>
+</section>
 
-    <script src="index.js"></script>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section section-anchor" id="pricing">
+        <h2 class="section-title text-center" data-key="pricing_headline">Planet Tona të Çmimeve</h2>
+        <div class="pricing-grid">
+            <!-- Plan Starter -->
+            <div class="plan-card">
+                <h3 data-key="plan_basic_title">Plani Starter (Nisës)</h3>
+                <div class="price-tag">€500<small data-key="price_onetime"> / Njëherësh</small></div>
+                <button class="plan-cta" data-plan="Starter" data-key="plan_basic_cta">Zgjidh Planin</button>
+                <ul style="margin-top: 20px;">
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_basic_feature1">1 Faqe Aterrimi (Landing Page)</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_basic_feature2">Dizenjim Reagjues Bazik</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_basic_feature3">Domen dhe Hosting (1 Vit)</span></li>
+                    <li style="color: grey;"><i class="fas fa-times-circle" style="color: grey;"></i> <span data-key="plan_basic_feature4">Sistem Menaxhimi (CMS)</span></li>
+                </ul>
+            </div>
+            <!-- Plan Business -->
+            <div class="plan-card popular">
+                <h3 data-key="plan_standard_title">Plani Biznesor (Popullor)</h3>
+                <div class="price-tag">€1200<small data-key="price_onetime"> / Njëherësh</small></div>
+                <button class="plan-cta" data-plan="Business" data-key="plan_standard_cta">Zgjidh Planin</button>
+                <ul style="margin-top: 20px;">
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature1">Deri në 5 Faqe (Home, About, Services...)</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature2">Dizenjim Unik & UI/UX</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature3">Hosting i Optimizuar (1 Vit)</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_standard_feature4">Sistem Menaxhimi i Përmbajtjes (CMS)</span></li>
+                </ul>
+            </div>
+            <!-- Plan Custom -->
+            <div class="plan-card">
+                <h3 data-key="plan_premium_title">Plani Custom (Premium)</h3>
+                <div class="price-tag" data-key="price_contact">Kontakto<small data-key="price_foroffer"> / Për Ofertë</small></div>
+                <button class="plan-cta" data-plan="Custom" data-key="plan_premium_cta">Kërkoni Ofertë</button>
+                <ul style="margin-top: 20px;">
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature1">Zhvillim i plotë i aplikacionit (WebApp)</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature2">Funksionalitete të Personalizuara</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature3">Integrime me API/Pagesa</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-key="plan_premium_feature4">Mbështetje 24/7 dhe Trajnim</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Callout -->
+    <section class="callout-card gradient-bg-2 section-anchor" id="contact">
+        <h3 data-key="callout2_title">Gati të filloni projektin tuaj?</h3>
+        <p data-key="callout2_description">Na kontaktoni direkt sot për të diskutuar nevojat tuaja.</p>
+        <div class="contact-icons">
+            <a href="https://github.com/albert2aliu-alt" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="tel:+38343123456" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
+        </div>
+        <button class="card-btn" id="emailCtaBtn" data-key="callout2_btn">Dërgo një E-mail</button>
+    </section>
+</main>
+
+<!-- Modal -->
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modalTitle" data-key="modal_title" >Regjistrohu për Të Filluar</h3>
+        <p id="modalSubtitle" data-key="modal_subtitle">Plotësoni detajet më poshtë dhe ne do t'ju kontaktojmë brenda 24 orëve.</p>
+        <form class="modal-form">
+            <label for="modal-name" data-key="modal_name_label">Emri i Plotë</label>
+            <input type="text" id="modal-name" required>
+            <label for="modal-email" data-key="modal_email_label">E-mail Adresa</label>
+            <input type="email" id="modal-email" required>
+            <label for="modal-details" data-key="modal_details_label">Si mund t'ju ndihmojmë?</label>
+            <textarea id="modal-details" rows="4"></textarea>
+            <button type="submit" class="primary-btn" data-key="modal_submit_btn">Dërgo Kërkesën</button>
+        </form>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-logo">DEVRO</div>
+        <p class="copyright">&copy; <span id="current-year"></span> DEVRO. <span data-key="footer_copyright">Të gjitha të drejtat e rezervuara.</span></p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
 </body>
 </html>
